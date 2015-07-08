@@ -1,7 +1,7 @@
 (function () {
     
     //Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "Yemasthui";
+    var fork = "Alex2095";
 		
     //Define our function responsible for extending the bot.
     function extend() {
@@ -56,13 +56,13 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "NGGBot",
         language: "english",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/Alex2095/basicBot/master/lang/en.json",
         startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
-        autowoot: true,
+        startupVolume: 10, // 0-100
+        startupEmoji: true, // true or false
+        autowoot: false,
         smartSkip: true,
         cmdDeletion: true,
         maximumAfk: 120,
@@ -94,20 +94,20 @@
             ["unavailable", "The song you played was not available for some users. "]
         ],
         afkpositionCheck: 15,
-        afkRankCheck: "ambassador",
+        afkRankCheck: "residentdj",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motd: "MOTD",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
         opLink: null,
         rulesLink: null,
         themeLink: null,
-        fbLink: null,
+        fbLink: https://www.facebook.com/NextGenerationGaming,
         youtubeLink: null,
-        website: null,
-        intervalMessages: [],
+        website: http://www.ng-gaming.net/,
+        intervalMessages: ["Welcome to NGG Plug DJ! See our website at www.ng-gaming.net for more info.", "Join our SA:MP Server at samp.ng-gaming.net!", "Visit us on TeamSpeak at ts.ng-gaming.net!"],
         messageInterval: 5,
         songstats: true,
         commandLiteral: "!",
@@ -119,6 +119,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/Alex2095/basicBot/master/basicBot.js", extend);
 
 }).call(this);
